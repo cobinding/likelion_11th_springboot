@@ -82,7 +82,7 @@ public class MemberController {
         Address address = new Address(city, state, street, zipcode);
 
         // Member 객체 생성
-        Member member = Member.creatMember(name, address);
+        Member member = Member.createMember(name, address);
         // 생성된 회원 객체 db에 저장
         memberService.save(member);
         // 회원 저장을 완료한 뒤 "/"경로로 리다이렉트한다. -> 클라이언트를 메인 페이지로 이동..
